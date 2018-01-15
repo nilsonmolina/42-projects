@@ -1,0 +1,79 @@
+1. In the most concise way possible, answer this question, what is 42? How would you 
+describe 42 to someone who doesn’t know what 42 is?
+
+	42 is a tuition-free programming school that focuses on peer-to-peer and 
+	project-based learning.
+
+2. Why are there no instructions on the initial 42 logic tests?
+
+	The initial 42 logic tests are designed to test the applicant in various ways. 
+	By not including instructions, the applicant is required to not only critically 
+	think of a solution, but also think for themselves by interpreting the requirements 
+	without having someone spell things out for them.   
+
+3. What are the core 42 principles?
+
+	The following are the core principles at 42 as shown on the 42 website:
+	* Pursuit of Excellence
+	* Innovation and Questioning
+	* Creativity and Passion
+	* Commitment to Community
+	* Belief in Open Opportunities
+
+4. If somebody is thinking of going to 42, but has no coding experience - do you really 
+think it’s worth their time?
+
+	Absolutely! Having coding experience does not guarantee that you will do well at 42. 
+
+5. What makes 42 unique?
+
+	At 42, students are responsible for their own success.  There is no one spelling 
+	things out for you.  You have to find out what to do, how to do them, and when to 
+	do them. There are no teachers, you learn by researching the problems yourself or 
+	by asking your peers around you.
+
+6. What do you think you’re learning the most at 42?
+
+	I've learned to really value peer-to-peer learning in general.  By working and 
+	talking through problems with others, you can learn so much more.  You gain so 
+	much value and knowledge regardless of whether you are the one getting help or the 
+	one giving help to others.
+
+7. Imagine (this will happen very soon in real life!), you’ve been stuck on the problem 
+for a while and have no idea what to do - what your next steps would be?
+
+	If by this point, I have already searched online and come up with nothing, then I 
+	would simply turn to my peers around me.  (This happens all the time at 42).
+
+8. How will you ensure that your personal level of motivation remains high on a daily 
+basis to complete at least 1 level per month without the Piscine pressure and strict 
+deadlines?
+
+	The piscine taught me that working in groups greatly enhances your effectiveness 
+	and pushes you to work harder.  Having a strong group in which everyone constantly 
+	challenges each other provides the opportunity to not only learn different ways of 
+	solving a similar problem, but also see how different approaches may or may not be 
+	advantageous.
+
+9. If someone asks you why it says internships are required on the 42 website, but they 
+do not offer job placement, what would you say?
+
+	You are responsible for your own success.  Once you reach a certain level, you will 
+	be required to get an internship and like every other assignment beforehand, you have 
+	to figure it out yourself. That means you need to do your research and network with 
+	people to make that happen.
+
+10. How do the internships work? Is it mandatory that you have to reach a certain level 
+before leaving on an internship or can you validate it anytime you find one?
+
+	You will have to reach a certain level before validating your internship.
+
+11. How does 42 help you adapt to a work place?
+
+	42's peer to peer learning environment is conducive to improving our ability to work 
+	well with others.  Furthermore, the project-based approach combined with the fact that 
+	we have to figure things out on our own, better emulates the workplace.
+
+BONUS - talk to GAETAN about his favorite pizza places!
+
+	Gaetans favorite pizza place is Le Tiki.
