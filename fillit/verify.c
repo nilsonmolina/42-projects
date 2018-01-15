@@ -6,7 +6,7 @@
 /*   By: nmolina <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/16 12:40:28 by nmolina           #+#    #+#             */
-/*   Updated: 2018/01/03 20:39:55 by ndoorn           ###   ########.fr       */
+/*   Updated: 2018/01/04 13:36:06 by ndoorn           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ int		scan_file(char *file, t_map *map)
 {
 	int		i;
 	t_io	io;
+	t_ch	ch;
 
 	i = 0;
 	io.fd = open(file, O_RDONLY);
-	if (io.fd == -1)
-		return (0);
-	while ((io.ret = read(io.fd, io.buffer, BUF_SIZE)))
+	while (io.fd >= 0 && (io.ret = read(io.fd, io.buf, BUF_SIZE)))
 	{
-		io.buffer[io.ret] = '\0';
+		io.buf[io.ret] = '\0';
+		ch.buf = io.buf;
 		if (i > 25 || io.ret < BUF_SIZE - 1 || io.ret > BUF_SIZE ||
-			!scan_chunk(io.buffer, &map->tets[i]))
+			!scan_chunk(&ch, &map->tets[i]))
 			return (0);
 		diff_chunk(&map->tets[i]);
 		map->tets[i].c = 'A' + i;
@@ -36,38 +36,36 @@ int		scan_file(char *file, t_map *map)
 		io.last_ret = io.ret;
 		i++;
 	}
-	if (io.last_ret == BUF_SIZE || i == 0)
-		return (0);
 	close(io.fd);
-	map->count = i;
-	return (1);
+	return (io.last_ret != BUF_SIZE && (map->count = i) > 0);
 }
 
-int		scan_chunk(char *chunk, t_tet *tet)
+int		scan_chunk(t_ch *ch, t_tet *tet)
 {
-	COUNTER_VARS;
-	while (chunk[i])
+	int		i;
+
+	ch->x = 0;
+	ch->y = 0;
+	ch->hash_len = 0;
+	i = 0;
+	while (ch->buf[i])
 	{
-		if (!(IS_VALID_CHAR(chunk[i])))
+		if (!DOT_HASH_ENDL(ch->buf[i]) || ch->hash_len > 4)
 			return (0);
-		if (chunk[i] == '#')
-			tet->hashes[tiles++] = i + 1 - y;
-		if (chunk[i] == '#' && tiles > 4)
-			return (0);
-		if (chunk[i] == '\n')
+		if (ch->buf[i] == '#')
+			tet->hashes[ch->hash_len++] = i + 1 - ch->y;
+		if (ch->buf[i] == '\n')
 		{
-			y++;
-			if (x != 4 && y != 5)
+			ch->y++;
+			if (ch->x != 4 && ch->y != 5)
 				return (0);
-			x = 0;
+			ch->x = 0;
 		}
 		else
-			x++;
+			ch->x++;
 		i++;
 	}
-	if (tiles != 4)
-		return (0);
-	return (1);
+	return (ch->hash_len == 4);
 }
 
 void	diff_chunk(t_tet *tet)
