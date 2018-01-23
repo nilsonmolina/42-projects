@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r4p28.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Mon Jan  1 10:37:15 PST 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180101/husui
+
+= Git history ==================================================================
+$> git -C /var/folders/nx/bzv14dn52xj2wktc77vb4yxc0000gp/T/tmpAi78mg/user log --pretty='%H - %an, %ad : %s'
+33a92dee1bc3054a55a3cf5f3fd6dba6d9dea2ce - Hiroshi Usui, Mon Jan 1 10:37:08 2018 -0800 : hello.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nx/bzv14dn52xj2wktc77vb4yxc0000gp/T/tmpAi78mg/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  236 Jan  1 10:37 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan  1 10:37 hello
+
+/var/folders/nx/bzv14dn52xj2wktc77vb4yxc0000gp/T/tmpAi78mg/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1085 Jan  1 10:37 hello.c
+ 
+= hello ========================================================================
+$> gcc -Wextra -Wall -Werror hello.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./hu5a64726bnjba6r3l5dgha4 test1.prm
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

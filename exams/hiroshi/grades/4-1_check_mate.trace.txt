@@ -1,0 +1,161 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r8p16.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Thu Dec  7 12:22:43 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171207/husui2
+
+= Git history ==================================================================
+$> git -C /var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user log --pretty='%H - %an, %ad : %s'
+7fa262ece233a9583a757c48c284e744a6fdebfc - Hiroshi Usui, Thu Dec 7 12:22:35 2017 -0800 : check_mate
+774e927c63b17e38417f5e7faea23d9c9da4bc90 - Hiroshi Usui, Thu Dec 7 12:17:19 2017 -0800 : ft_split.c
+cb078a62e3f2d13780e26c9cf3014d104322fdbf - Hiroshi Usui, Thu Dec 7 12:14:31 2017 -0800 : paramsum.c
+e889520b66721d64371c61c57933f61e9eb3918d - Hiroshi Usui, Thu Dec 7 12:10:41 2017 -0800 : print_hex.c
+a3cf4ea2ead544e3c1f9638b5b3595a6fea18068 - Hiroshi Usui, Thu Dec 7 11:58:27 2017 -0800 : ft_strcmp.c
+5258b6a27a1181bdc90a3ba0a9bfa2139fc4829b - Hiroshi Usui, Thu Dec 7 11:53:07 2017 -0800 : max.c
+280926e9522ad393b8d24b9064b6fca8d6fab96c - Hiroshi Usui, Thu Dec 7 11:49:53 2017 -0800 : mirror_alpha.c
+c195d27c8bbd2a48ce11ba1501a0522c241544ad - Hiroshi Usui, Thu Dec 7 11:32:18 2017 -0800 : mirror_alpha.c
+33599c24dc684edf7412d19f091cd7f4b4fba164 - Hiroshi Usui, Thu Dec 7 10:38:45 2017 -0800 : ft_putstr.c
+124088df7089ccb2a99181f02759c2eedcb29c6e - Hiroshi Usui, Thu Dec 7 10:34:26 2017 -0800 : maff_alpha.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user
+total 8
+-rw-r--r--   1 deepthought  deepthought  3996 Dec  7 12:22 __GIT_HISTORY
+drwxr-xr-x  18 deepthought  deepthought   612 Dec  7 12:22 check_mate
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:22 do_op
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:22 ft_putstr
+drwxr-xr-x   4 deepthought  deepthought   136 Dec  7 12:22 ft_split
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:22 ft_strcmp
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:22 maff_alpha
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:22 max
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:22 mirror_alpha
+drwxr-xr-x   6 deepthought  deepthought   204 Dec  7 12:22 paramsum
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:22 print_hex
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/check_mate:
+total 136
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._check_mate.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._checkmate.h
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._ft_bishop.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._ft_opiece.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._ft_pawn.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._ft_rook.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:22 ._ft_strlen.c
+-rwxr-xr-x  1 deepthought  deepthought  1788 Dec  7 12:22 check_mate.c
+-rwxr-xr-x  1 deepthought  deepthought  1169 Dec  7 12:22 checkmate.h
+-rwxr-xr-x  1 deepthought  deepthought  1581 Dec  7 12:22 ft_bishop.c
+-rwxr-xr-x  1 deepthought  deepthought  1040 Dec  7 12:22 ft_opiece.c
+-rwxr-xr-x  1 deepthought  deepthought  1093 Dec  7 12:22 ft_pawn.c
+-rwxr-xr-x  1 deepthought  deepthought  1500 Dec  7 12:22 ft_rook.c
+-rwxr-xr-x  1 deepthought  deepthought  1000 Dec  7 12:22 ft_strlen.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1365 Dec  7 12:22 do_op.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  996 Dec  7 12:22 ft_putstr.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/ft_split:
+total 24
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/ft_strcmp:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1026 Dec  7 12:22 ft_strcmp.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1234 Dec  7 12:22 maff_alpha.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/max:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1133 Dec  7 12:22 max.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/mirror_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1529 Dec  7 12:22 mirror_alpha.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/paramsum:
+total 40
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._paramsum.c
+-rw-r--r--  1 deepthought  deepthought  1146 Dec  7 12:22 paramsum.c
+
+/var/folders/vv/85m02wyn68960rq6v60sq_fw0000gp/T/tmpoJ1otV/user/print_hex:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:22 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:22 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1842 Dec  7 12:22 print_hex.c
+ 
+= check_mate ===================================================================
+$> gcc -Wextra -Wall -Werror ft_bishop.c ft_strlen.c ft_rook.c ft_pawn.c ft_opiece.c check_mate.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./c9rjmftz1vyel0pl5cqh87fa 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./vmvanxnlos8x9hcw4yg4pgz7 '...B.' '.B...' '$%^&*' '...K.' '.....'
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./1tyr7sp6gd8la5e483copavk  "...B." ".T..." "....." "...K." "....."
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./bzo9rnv6zonddo4y1fjh43d9 "K"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./c7gbwmdcsj7h6b51s3nu3kcw "BPKP" "PRP." ".Q.." "..P."
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./nfqssccptv5yflq5i0lybde1 "B....." "......" "......" "......" "......" ".....K"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./njj3w0tneyrussafoeii4oe7 "K....." "......" "......" "......" "......" ".....B"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./ab7cvz5iq0qwtd2cigpxgmz2 '........' '........' '.P....P.' '...B.B..' '....Q...' '..R..R..' '......K.' '...R....'
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

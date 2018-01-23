@@ -1,0 +1,88 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p42.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Mon Jan  1 10:40:36 PST 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/practice-exam_20180101/husui
+
+= Git history ==================================================================
+$> git -C /var/folders/nt/k04gq1tx48b71fqs7b097lq00000gp/T/tmppsnYHy/user log --pretty='%H - %an, %ad : %s'
+52aae64668fe6c5f879cfbbb45c8c306549df5de - Hiroshi Usui, Mon Jan 1 10:40:26 2018 -0800 : ft_strlen.c
+33a92dee1bc3054a55a3cf5f3fd6dba6d9dea2ce - Hiroshi Usui, Mon Jan 1 10:37:08 2018 -0800 : hello.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nt/k04gq1tx48b71fqs7b097lq00000gp/T/tmppsnYHy/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  474 Jan  1 10:40 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan  1 10:40 ft_strlen
+drwxr-xr-x  3 deepthought  deepthought  102 Jan  1 10:40 hello
+
+/var/folders/nt/k04gq1tx48b71fqs7b097lq00000gp/T/tmppsnYHy/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  994 Jan  1 10:40 ft_strlen.c
+
+/var/folders/nt/k04gq1tx48b71fqs7b097lq00000gp/T/tmppsnYHy/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1085 Jan  1 10:40 hello.c
+ 
+= ft_strlen ====================================================================
+$> gcc -Wextra -Wall -Werror ft_strlen.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./3ukhf2sgl8a85ogtywcxn4xa ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./81fqknhn190564dzffihnntw "	"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ocw9ivmzns4m7s52810d2zok "biL3cfoxp6"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./b4eeam5gckgqpj2t8eni342z "FPGaBmri"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./bczi9npktumupjwsobeb6u2z "Ne6bpkOtsq4WKoTuy"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./e1qgvenkmo6xr76m73ql9o0l "Lu08 HMFB1vebDI2 gxRQ49b skPZKTjIf xCiIMfVn4Yy6SO GaMgpxjX5if8CP XsIC5uP2Q TDIp40wWgRliyM Oj6x 19qSIBeJMnCxcOs NIch Vg5"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./m0ioyuoe0sqgpdkbafo7l2nd "3I1EGRzDmV8 47pFRlIoG3x0 DNOFgV1PQ r8oGyj9 XzVS960b uZUp Do6a1NxJXEFuA KvtHoBPlbey"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./uc5p86b69z1pey4ltzg8e6w7 "SkYiWLIoUzt adT5oJO Y5nC3vaQp ybUVuPcMLnC"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

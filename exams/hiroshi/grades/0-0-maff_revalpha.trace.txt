@@ -1,0 +1,48 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p30.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Nov 28 09:09:59 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/exam_20171128/husui
+
+= Git history ==================================================================
+$> git -C /var/folders/dy/80rxx6g15mxck3p01fggkgxh0000gp/T/tmpj5AKuu/user log --pretty='%H - %an, %ad : %s'
+494fedfc8995cb5b667f12eaa61ee0bd014025d7 - Exam 42, Tue Nov 28 09:09:22 2017 -0800 : maff_revalpha.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/dy/80rxx6g15mxck3p01fggkgxh0000gp/T/tmpj5AKuu/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  315 Nov 28 09:10 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought  136 Nov 28 09:10 maff_revalpha
+
+/var/folders/dy/80rxx6g15mxck3p01fggkgxh0000gp/T/tmpj5AKuu/user/maff_revalpha:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Nov 28 09:10 .maff_revalpha.c.swp
+-rw-r--r--  1 deepthought  deepthought    341 Nov 28 09:10 maff_revalpha.c
+ 
+= maff_revalpha ================================================================
+$> gcc -Wextra -Wall -Werror maff_revalpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./cl61w0dxsuc8sxarejo6av1r
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

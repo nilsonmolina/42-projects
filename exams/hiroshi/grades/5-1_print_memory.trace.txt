@@ -1,0 +1,142 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p3.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Thu Dec  7 12:33:03 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171207/husui2
+
+= Git history ==================================================================
+$> git -C /var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user log --pretty='%H - %an, %ad : %s'
+6db6258e15a8b094688fcc2a860e0b766a200f82 - Hiroshi Usui, Thu Dec 7 12:32:47 2017 -0800 : print_memory.c
+b9368eae7d7aed69f7bdca2843ea04eaa6d64d3d - Hiroshi Usui, Thu Dec 7 12:24:42 2017 -0800 : rpn_calc.c
+7fa262ece233a9583a757c48c284e744a6fdebfc - Hiroshi Usui, Thu Dec 7 12:22:35 2017 -0800 : check_mate
+774e927c63b17e38417f5e7faea23d9c9da4bc90 - Hiroshi Usui, Thu Dec 7 12:17:19 2017 -0800 : ft_split.c
+cb078a62e3f2d13780e26c9cf3014d104322fdbf - Hiroshi Usui, Thu Dec 7 12:14:31 2017 -0800 : paramsum.c
+e889520b66721d64371c61c57933f61e9eb3918d - Hiroshi Usui, Thu Dec 7 12:10:41 2017 -0800 : print_hex.c
+a3cf4ea2ead544e3c1f9638b5b3595a6fea18068 - Hiroshi Usui, Thu Dec 7 11:58:27 2017 -0800 : ft_strcmp.c
+5258b6a27a1181bdc90a3ba0a9bfa2139fc4829b - Hiroshi Usui, Thu Dec 7 11:53:07 2017 -0800 : max.c
+280926e9522ad393b8d24b9064b6fca8d6fab96c - Hiroshi Usui, Thu Dec 7 11:49:53 2017 -0800 : mirror_alpha.c
+c195d27c8bbd2a48ce11ba1501a0522c241544ad - Hiroshi Usui, Thu Dec 7 11:32:18 2017 -0800 : mirror_alpha.c
+33599c24dc684edf7412d19f091cd7f4b4fba164 - Hiroshi Usui, Thu Dec 7 10:38:45 2017 -0800 : ft_putstr.c
+124088df7089ccb2a99181f02759c2eedcb29c6e - Hiroshi Usui, Thu Dec 7 10:34:26 2017 -0800 : maff_alpha.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user
+total 16
+-rw-r--r--   1 deepthought  deepthought  4900 Dec  7 12:33 __GIT_HISTORY
+drwxr-xr-x  18 deepthought  deepthought   612 Dec  7 12:33 check_mate
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:33 do_op
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:33 ft_putstr
+drwxr-xr-x   4 deepthought  deepthought   136 Dec  7 12:33 ft_split
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:33 ft_strcmp
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:33 maff_alpha
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:33 max
+drwxr-xr-x   3 deepthought  deepthought   102 Dec  7 12:33 mirror_alpha
+drwxr-xr-x   6 deepthought  deepthought   204 Dec  7 12:33 paramsum
+drwxr-xr-x   5 deepthought  deepthought   170 Dec  7 12:33 print_hex
+drwxr-xr-x   4 deepthought  deepthought   136 Dec  7 12:33 print_memory
+drwxr-xr-x   6 deepthought  deepthought   204 Dec  7 12:33 rpn_calc
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/check_mate:
+total 136
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._check_mate.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._checkmate.h
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._ft_bishop.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._ft_opiece.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._ft_pawn.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._ft_rook.c
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._ft_strlen.c
+-rwxr-xr-x  1 deepthought  deepthought  1788 Dec  7 12:33 check_mate.c
+-rwxr-xr-x  1 deepthought  deepthought  1169 Dec  7 12:33 checkmate.h
+-rwxr-xr-x  1 deepthought  deepthought  1581 Dec  7 12:33 ft_bishop.c
+-rwxr-xr-x  1 deepthought  deepthought  1040 Dec  7 12:33 ft_opiece.c
+-rwxr-xr-x  1 deepthought  deepthought  1093 Dec  7 12:33 ft_pawn.c
+-rwxr-xr-x  1 deepthought  deepthought  1500 Dec  7 12:33 ft_rook.c
+-rwxr-xr-x  1 deepthought  deepthought  1000 Dec  7 12:33 ft_strlen.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/do_op:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1365 Dec  7 12:33 do_op.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  996 Dec  7 12:33 ft_putstr.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/ft_split:
+total 24
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/ft_strcmp:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1026 Dec  7 12:33 ft_strcmp.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1234 Dec  7 12:33 maff_alpha.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/max:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1133 Dec  7 12:33 max.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/mirror_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1529 Dec  7 12:33 mirror_alpha.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/paramsum:
+total 40
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._paramsum.c
+-rw-r--r--  1 deepthought  deepthought  1146 Dec  7 12:33 paramsum.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/print_hex:
+total 32
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rw-r--r--  1 deepthought  deepthought  1842 Dec  7 12:33 print_hex.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/print_memory:
+total 16
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._print_memory.c
+-rw-r--r--  1 deepthought  deepthought  1711 Dec  7 12:33 print_memory.c
+
+/var/folders/gp/p_0w73793gv8b24x2qrntzrh0000gp/T/tmp7Ig6Z4/user/rpn_calc:
+total 40
+-rw-r--r--  1 deepthought  deepthought  6148 Dec  7 12:33 .DS_Store
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  7 12:33 ._.DS_Store
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  7 12:33 ._rpn_calc.c
+-rwxr-xr-x  1 deepthought  deepthought  2778 Dec  7 12:33 rpn_calc.c
+ 
+= print_memory =================================================================
+$> gcc -Wextra -Wall -Werror print_memory.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./xkk6c4wipi8l7ylzxf12w2fk
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

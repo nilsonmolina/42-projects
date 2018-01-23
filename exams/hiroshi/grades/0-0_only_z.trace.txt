@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p13.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Mon Dec 18 23:54:01 PST 2017
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171219/husui
+
+= Git history ==================================================================
+$> git -C /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpZmrlXC/user log --pretty='%H - %an, %ad : %s'
+a84bf0371a3c3139bf14ce56704bcc9d7b9cd941 - Hiroshi Usui, Mon Dec 18 23:53:53 2017 -0800 : only_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpZmrlXC/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  229 Dec 18 23:54 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 18 23:54 only_z
+
+/var/folders/nw/bb61tfcj6tb_zcxzk257qvjh0000gp/T/tmpZmrlXC/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  966 Dec 18 23:54 only_z.c
+ 
+= only_z =======================================================================
+$> gcc -Wextra -Wall -Werror only_z.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./zivdrbdlnwgt46aiqtunvkrb 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

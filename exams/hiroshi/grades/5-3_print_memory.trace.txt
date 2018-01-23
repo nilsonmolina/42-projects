@@ -1,0 +1,68 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p5.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Sat Dec  9 23:58:25 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/practice-exam_20171210/husui
+
+= Git history ==================================================================
+$> git -C /var/folders/3v/byy4hkm14x7drclzhmgy3jtm0000gp/T/tmpj5dTbj/user log --pretty='%H - %an, %ad : %s'
+c37e863d4681e0ef9f34507fe6725ec65828a41e - Hiroshi Usui, Sat Dec 9 23:58:16 2017 -0800 : print_memory.c
+bc41791265d8be10eed0b1804d8e87ae501ba5f5 - Hiroshi Usui, Sat Dec 9 23:38:05 2017 -0800 : ft_itoa_base.c
+fec18f4f2a1c9403d4c853f195b1f208291a7bb9 - Hiroshi Usui, Sat Dec 9 23:18:54 2017 -0800 : rpn_calc.c
+fcaac6bff2cc68e4e154f965c8e5374fcddd7efe - Hiroshi Usui, Sat Dec 9 22:48:26 2017 -0800 : check_mate.c
+a6e48a55bdc60124c995a7ac1b87b1d5901d63fc - Hiroshi Usui, Sat Dec 9 22:34:02 2017 -0800 : expand_str.c
+0880f438715005ff0ebf18057ed2acb734e80b81 - Hiroshi Usui, Sat Dec 9 22:14:02 2017 -0800 : max.c
+9e0c53617440b5c4cb959e0975eb8b234776ff90 - Hiroshi Usui, Sat Dec 9 22:07:36 2017 -0800 : ft_putstr.c
+a4dad2740b992d6825b2ec9d857bc587c9ed50bb - Hiroshi Usui, Sat Dec 9 22:05:11 2017 -0800 : Hello.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/3v/byy4hkm14x7drclzhmgy3jtm0000gp/T/tmpj5dTbj/user
+total 32
+-rw-r--r--  1 deepthought  deepthought  2676 Dec  9 23:58 __GIT_HISTORY
+-rwxr-xr-x  1 deepthought  deepthought  8812 Dec  9 23:58 a.out
+drwxr-xr-x  4 deepthought  deepthought   136 Dec  9 23:58 ft_itoa_base
+drwxr-xr-x  4 deepthought  deepthought   136 Dec  9 23:58 print_memory
+drwxr-xr-x  4 deepthought  deepthought   136 Dec  9 23:58 rpn
+
+/var/folders/3v/byy4hkm14x7drclzhmgy3jtm0000gp/T/tmpj5dTbj/user/ft_itoa_base:
+total 16
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  9 23:58 ._ft_itoa_base.c
+-rwxr-xr-x  1 deepthought  deepthought  2046 Dec  9 23:58 ft_itoa_base.c
+
+/var/folders/3v/byy4hkm14x7drclzhmgy3jtm0000gp/T/tmpj5dTbj/user/print_memory:
+total 16
+-rw-r--r--  1 deepthought  deepthought  4096 Dec  9 23:58 ._print_memory.c
+-rw-r--r--  1 deepthought  deepthought  1013 Dec  9 23:58 print_memory.c
+
+/var/folders/3v/byy4hkm14x7drclzhmgy3jtm0000gp/T/tmpj5dTbj/user/rpn:
+total 16
+-rwxr-xr-x  1 deepthought  deepthought  4096 Dec  9 23:58 ._rpn_calc.c
+-rwxr-xr-x  1 deepthought  deepthought  2969 Dec  9 23:58 rpn_calc.c
+ 
+= print_memory =================================================================
+$> gcc -Wextra -Wall -Werror print_memory.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./mcqoy5pqf65gkksppg6g6900
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
