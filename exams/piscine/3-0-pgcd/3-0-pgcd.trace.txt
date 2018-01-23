@@ -1,0 +1,66 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r3p20.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov 10 19:51:11 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20171111/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user log --pretty='%H - %an, %ad : %s'
+fb57263185b886a1ec3e0ec68e507c2d13a626f6 - Exam 42, Fri Nov 10 19:49:39 2017 -0800 : attempted level 3 - pgcd
+19464ca3e850df891141a035dafa38a9df3cb179 - Exam 42, Fri Nov 10 19:21:10 2017 -0800 : backup
+755185e78611b822889b7d04a602b1bf7a2c4dfb - Exam 42, Fri Nov 10 18:56:22 2017 -0800 : attempted level 2 - print_bits
+938551facbda387978c6d63014a0d56c533467d0 - Exam 42, Fri Nov 10 18:51:16 2017 -0800 : pushing level 2 (before testing) in case computer crashes
+2bd695903754014911c2b9e5ca0d1f6001b8725b - Exam 42, Fri Nov 10 18:45:42 2017 -0800 : reversed argument order in level 1 - ft_strcpy
+ac053b5975923a6f7679b73a9af890aed80cb8f6 - Exam 42, Fri Nov 10 18:38:29 2017 -0800 : attempted level 1 - ft_strcpy
+e3aa6e0ed907f26a6febb879c6bff40abcd1d196 - Exam 42, Fri Nov 10 18:24:30 2017 -0800 : attempted level 0 - aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1915 Nov 10 19:51 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 10 19:51 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 10 19:51 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 10 19:51 pgcd
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 10 19:51 print_bits
+
+/var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1178 Nov 10 19:51 aff_last_param.c
+
+/var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1089 Nov 10 19:51 ft_strcpy.c
+
+/var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user/pgcd:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1982 Nov 10 19:51 pgcd.c
+
+/var/folders/64/3nn24sb51w731frhh180lkl80000gq/T/tmpM3yrv3/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1139 Nov 10 19:51 print_bits.c
+ 
+= pgcd =========================================================================
+$> gcc -Wextra -Wall -Werror pgcd.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./1i6ldjwv3lw0783ec1e2g6ph "920556" "1980488"
+Command './1i6ldjwv3lw0783ec1e2g6ph "920556" "1980488"' got killed by a Segmentation fault (Signal -11)
+Grade: 0
+
+= Final grade: 0 ===============================================================

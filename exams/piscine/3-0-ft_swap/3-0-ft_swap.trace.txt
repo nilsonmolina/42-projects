@@ -1,0 +1,112 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p39.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Oct 27 19:20:38 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20171028/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user log --pretty='%H - %an, %ad : %s'
+317c39ef16fedc3192be997ab13c5d2f092a11be - Exam 42, Fri Oct 27 19:19:40 2017 -0700 : attempted level 3 - ft_swap
+bf5b2aa638ea7c91126e2ed24d5521e219621822 - Exam 42, Fri Oct 27 18:56:42 2017 -0700 : formatted to follow Norm standards on level 2 - maff_revalpha
+9c7d26d7d2be5b0bbbc3c6188c86d1116aaef768 - Exam 42, Fri Oct 27 18:51:39 2017 -0700 : attempted level 2 - maff_revalpha
+7e5d0901ebbbc3380201f9fb59cc66c24da09b8b - Exam 42, Fri Oct 27 18:42:02 2017 -0700 : attempted level 1 - hello
+c3902f83eb1b04e4df50d9a9cba8378bcd91326e - Exam 42, Fri Oct 27 18:30:52 2017 -0700 : attempted level 0 - only_z
+0346dbf28c0ff088d8cd23f9ba94e07e23fdab40 - Exam 42, Fri Oct 27 18:20:36 2017 -0700 : attempted level 0 - only_a
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1541 Oct 27 19:20 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:20 ft_swap
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:20 hello
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:20 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:20 only_a
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:20 only_z
+
+/var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  971 Oct 27 19:20 ft_swap.c
+
+/var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1281 Oct 27 19:20 hello.c
+
+/var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1299 Oct 27 19:20 maff_revalpha.c
+
+/var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  972 Oct 27 19:20 only_a.c
+
+/var/folders/sk/jg69pzbx5ns7xk8fmknr_j600000gp/T/tmppkzmzG/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1033 Oct 27 19:20 only_z.c
+ 
+= ft_swap ======================================================================
+$> gcc -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./s2rbtbod5pe7csr57kpfks1i "1335244585" "141417820"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./d94zvukihxru5vddeatzdjbr "-1553419960" "-1688655339"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./8nk9tu501djr4covbqky4wxg "181028722" "-737941768"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./0uxp7vumyh7poo6t26w4v2mt "1056270156" "955308266"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./5zvpka1kwnu1cu4q73r7414g "1528506901" "948820385"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./a4x6pnvk134ijdxow2s2glgb "1540263593" "-2016701939"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./clju97udq4mgr0po3dpnqfvd "-1319815607" "1817942687"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./pgzp0ad49o76xfiwmh9vljx8 "511002704" "2100765401"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./123m2ykytz1lekejsk47by46 "1505367536" "-379519729"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

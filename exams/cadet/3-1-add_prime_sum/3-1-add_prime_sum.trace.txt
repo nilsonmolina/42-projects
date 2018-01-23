@@ -1,0 +1,69 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r1p11.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Jan 16 10:25:36 PST 2018
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/exam_20180116/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user log --pretty='%H - %an, %ad : %s'
+2149bbbbc30e4caf57e851afd3c9fc5860c51b19 - Exam 42, Tue Jan 16 10:25:16 2018 -0800 : did not feel it -.-
+fed6e24fdb08eb6c34440be105c74976ffe03a53 - Exam 42, Tue Jan 16 10:18:38 2018 -0800 : could not figure it out :/
+c8998ec85d93f5de884d13d3e80fef4712c5ab0c - Exam 42, Tue Jan 16 09:51:26 2018 -0800 : almost turned in the main!!!!
+5dc88c5b635c17777e5c37617bf81c5f7ec8c85e - Exam 42, Tue Jan 16 09:49:43 2018 -0800 : attempted level 2 - print_bits
+f5641380465c4adc13e9e00d1ae1234eb55f5871 - Exam 42, Tue Jan 16 09:31:40 2018 -0800 : attempt for level 1 ft_strcpy | man pages are vague -.-
+24aa7877f729f6261d8e520ebd00f2ba7a633148 - Exam 42, Tue Jan 16 09:18:29 2018 -0800 : lazy solution for level 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1564 Jan 16 10:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 16 10:25 add_prime_sum
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 16 10:25 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 16 10:25 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 16 10:25 print_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 16 10:25 print_hex
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user/add_prime_sum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1337 Jan 16 10:25 add_prime_sub.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1038 Jan 16 10:25 ft_strcpy.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  993 Jan 16 10:25 maff_revalpha.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1150 Jan 16 10:25 print_bits.c
+
+/var/folders/tq/ln84dzlj7cqc4y567m6nyk4w0000gp/T/tmpwm5QyA/user/print_hex:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1278 Jan 16 10:25 print_hex.c
+ 
+= add_prime_sum ================================================================
+$> gcc -Wextra -Wall -Werror  -o user_exe 
+clang: error: no input files
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

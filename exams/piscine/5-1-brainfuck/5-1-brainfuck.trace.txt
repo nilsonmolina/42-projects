@@ -1,0 +1,96 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r3p48.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov 17 15:25:42 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam-final/exam_20171117/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user log --pretty='%H - %an, %ad : %s'
+2db6214c904da4913fbad2efa10f65d27a5ed0fd - Exam 42, Fri Nov 17 15:25:15 2017 -0800 : did not even attempt this level 5 - brainfuck
+272e5e67723024ee57a51e2bbf9a731b0abedd46 - Exam 42, Fri Nov 17 15:13:16 2017 -0800 : attempted level 5 - ft_itoa_base
+79584370ce142307b4e20920a127506d7003fd5c - Exam 42, Fri Nov 17 14:08:45 2017 -0800 : attempted level 4 - fprime
+df38c249fb6516a0d2386463f9efe82bc7354108 - Exam 42, Fri Nov 17 13:12:52 2017 -0800 : attempted level 4 - ft_itoa
+1a923f997941370f48e51355b4a9682f46197fdd - Exam 42, Fri Nov 17 11:59:08 2017 -0800 : another cleaning call
+d15a563de875191afc2ecbf26b338c09fad99137 - Exam 42, Fri Nov 17 11:44:52 2017 -0800 : attempted level 3 - tab_mult
+8e66e0257555260c9db52a8079cd877741c9a5b4 - Exam 42, Fri Nov 17 11:21:10 2017 -0800 : time to clean
+d75c4af0373a0572a8433a8017a093618a5982de - Exam 42, Fri Nov 17 11:10:46 2017 -0800 : attempted level 2 - ft_strdup
+7fae89e74584b6c1a29708153851baa642b9e706 - Exam 42, Fri Nov 17 10:55:37 2017 -0800 : attempted level 1 - ulstr
+8f4bd5b663b389a354a44ff65fbd60d79c1f4701 - Exam 42, Fri Nov 17 10:42:31 2017 -0800 : attempted level 0 - ft_print_numbers
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2651 Nov 17 15:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 brainfuck
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 fprime
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 ft_itoa
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 ft_itoa_base
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 ft_strdup
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 tab_mult
+drwxr-xr-x  3 deepthought  deepthought   102 Nov 17 15:25 ulstr
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/brainfuck:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1139 Nov 17 15:25 brainfuck.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/fprime:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1581 Nov 17 15:25 fprime.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/ft_itoa:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1389 Nov 17 15:25 ft_itoa.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/ft_itoa_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1630 Nov 17 15:25 ft_itoa_base.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 Nov 17 15:25 ft_print_numbers.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/ft_strdup:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1191 Nov 17 15:25 ft_strdup.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/tab_mult:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1801 Nov 17 15:25 tab_mult.c
+
+/var/folders/23/qlg662gn2zd73_fzbbl46nwr0000gp/T/tmpsg_nl2/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1376 Nov 17 15:25 ulstr.c
+ 
+= brainfuck ====================================================================
+$> gcc -Wextra -Wall -Werror brainfuck.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ebjcpfumis56z6q4s3ozjghh "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2017-11-17 15:25:43.000000000 -0800$
++++ test1.output	2017-11-17 15:25:43.000000000 -0800$
+@@ -1 +1 @@$
+-Yup, I'm totally brain f*cked!$
++Hello World!$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

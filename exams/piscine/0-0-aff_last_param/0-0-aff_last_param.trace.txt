@@ -1,0 +1,87 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p29.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov 10 18:25:10 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20171111/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/v3/v5t2hdb133d11t3v4fhh2szw0000gp/T/tmpFF1iFm/user log --pretty='%H - %an, %ad : %s'
+e3aa6e0ed907f26a6febb879c6bff40abcd1d196 - Exam 42, Fri Nov 10 18:24:30 2017 -0800 : attempted level 0 - aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/v3/v5t2hdb133d11t3v4fhh2szw0000gp/T/tmpFF1iFm/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  274 Nov 10 18:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 18:25 aff_last_param
+
+/var/folders/v3/v5t2hdb133d11t3v4fhh2szw0000gp/T/tmpFF1iFm/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1178 Nov 10 18:25 aff_last_param.c
+ 
+= aff_last_param ===============================================================
+$> gcc -Wextra -Wall -Werror aff_last_param.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./v7fzhbn4xvt5h4u02zupehll 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./v4x38tqvfoovvrrgq0cm5p1o "dTjxf7U6KGC"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./8twvfoc0qaj1jj53mxx2oqqj "iBPtx"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./wc61o2jdtcunzdnoq3dtkop0 "ci6hEu8 CzIbyPk TGI9gf6b uNnDgHc6W"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./olgnq4yyj25n65hahwdkcu2o "O7r iFk UWM9 4VScT9 sI2Jyl7zhR5 4LzYb1HF SDCT 7b6IM5hA F R A kJVXgR8qdm v9qYjONgZo jzqmPO4 b EpPjb"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./beq8l8driit3jtybgfg0q5o2 "Yy6lDqW4" "bl7cdk5" "um" "Ju" "U7odWRy" "Bts17T" "QE15viuoF40" "DcPJ9eAL704Q" "IHbyjxce7Rs" "wHNIva" "2kRZiX" "CB1FIv0GnHi" "AGP5w3sRWIp" "4Stx0" "qoP"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./r4g0ldjfcm31enny7hx5u3zh "GrIJXHfnAUE" "a5" "ft" "HU" "Ezqkid" "YOuEdTa" "TtKHjyP46c" "QlH6X1CB" "Xa" "1aMfmlvsgki" "yPAxq" "32P0dbmgv" "WYP6DMJfiQR" "avK6I2"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./0bntczjyh4lqlfcyc5iolkv9 "oCDYg lZ04WcJ ANrYca qr7M" "l2vcKYbJMr" "AxVYQs74 ToM93 yklGh3P501" "JYQem" "OB9HLGmU lp5tiuGx9"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./sou7huh3l4izjg2q3gr22jqz "E" "KMcmT mTgREC MNtbljmCg" "CmsIQx n4 6tRX yowzY8gcpEK" "mPj G7TWc" "VzdqjHw80Kyr tR" "WGF ydaFTbP" "zSW6HlM9O23w" "MLHw4mk cIMp hBSuJFHjk3i KkJcoAiCN" "5tDObmrZydsu" "IUaXOnLe Scfw5P okizsp" "2O5V0QNx" "ViPtGkES R" "wVjG7N Ar6CtIP"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

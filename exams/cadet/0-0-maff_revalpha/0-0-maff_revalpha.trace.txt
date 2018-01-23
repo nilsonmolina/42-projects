@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r12p4.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Jan 16 09:19:09 PST 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/c-exam-alone-in-the-dark-beginner/exam_20180116/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/c4/7sgnk79j6yl0t7xz2d3gsskm0000gp/T/tmpqe5NDU/user log --pretty='%H - %an, %ad : %s'
+24aa7877f729f6261d8e520ebd00f2ba7a633148 - Exam 42, Tue Jan 16 09:18:29 2018 -0800 : lazy solution for level 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/c4/7sgnk79j6yl0t7xz2d3gsskm0000gp/T/tmpqe5NDU/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  247 Jan 16 09:19 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 16 09:19 maff_revalpha
+
+/var/folders/c4/7sgnk79j6yl0t7xz2d3gsskm0000gp/T/tmpqe5NDU/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  993 Jan 16 09:19 maff_revalpha.c
+ 
+= maff_revalpha ================================================================
+$> gcc -Wextra -Wall -Werror maff_revalpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./oo7o9shxiea9v7sf1z3o1kd4
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

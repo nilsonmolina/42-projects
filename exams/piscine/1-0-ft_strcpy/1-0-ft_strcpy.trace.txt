@@ -1,0 +1,124 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r10p1.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov 10 18:46:11 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20171111/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/sd/6j3741ld0mzfhn2f2xdq44bw0000gp/T/tmpCiFdPt/user log --pretty='%H - %an, %ad : %s'
+2bd695903754014911c2b9e5ca0d1f6001b8725b - Exam 42, Fri Nov 10 18:45:42 2017 -0800 : reversed argument order in level 1 - ft_strcpy
+ac053b5975923a6f7679b73a9af890aed80cb8f6 - Exam 42, Fri Nov 10 18:38:29 2017 -0800 : attempted level 1 - ft_strcpy
+e3aa6e0ed907f26a6febb879c6bff40abcd1d196 - Exam 42, Fri Nov 10 18:24:30 2017 -0800 : attempted level 0 - aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/sd/6j3741ld0mzfhn2f2xdq44bw0000gp/T/tmpCiFdPt/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  792 Nov 10 18:46 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 18:46 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 18:46 ft_strcpy
+
+/var/folders/sd/6j3741ld0mzfhn2f2xdq44bw0000gp/T/tmpCiFdPt/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1178 Nov 10 18:46 aff_last_param.c
+
+/var/folders/sd/6j3741ld0mzfhn2f2xdq44bw0000gp/T/tmpCiFdPt/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1089 Nov 10 18:46 ft_strcpy.c
+ 
+= ft_strcpy ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_strcpy.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./rv6zcrbuk04ffidzxux2j0ka ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./sprdrablu1ckp40emeyn6c9v "tIyap"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./morzdouuciz9cw0472mx6mqx "Phn"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./vsqo7uac36s4c2uqr0h48051 "Py7nFmqt4JfsaZpIO"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./fx6wadlk5qf4kq0m6n02wi8i "7kWU1ufEP9i"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./zg9niw8rsivsomhc5ovw7j9z "75F"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./rc3t8aj6a10z184deayb50s9 "6UIk9SXu0"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./r17ohvn930ch22h8vxvw4xy2 "lMLh037H"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./ed25olp3yve14lwg8qrv9k9s "J8oZUlFqRWbAhX"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./m6deam6q450uv9u1jw4ds47c "oEFHgRYzinOZV"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./aor8tvqonkz8jle7m8ukmaqc "IUJ3gR5c9ja"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./21tp887obbztluz3in2szpz5 "fa8"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./uqultf6571z6tkbtzdxy53wi "suMDo9ciYaq"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./oe5twfv6ir6250ptco348ed7 "0cD"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./glj9qutzyf5riupwt3mq8zp7 "ufKQX7e"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

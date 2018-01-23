@@ -1,0 +1,72 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p41.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Dec 12 09:56:24 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/exam_20171212/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user log --pretty='%H - %an, %ad : %s'
+f540c9e2e20d96f540d695944df898b564723136 - Exam 42, Tue Dec 12 09:56:13 2017 -0800 : Gotta go, have an appointment
+2f85dc7a2bce66669f5bb9c26eb3ee6fd9b2ab01 - Exam 42, Tue Dec 12 09:47:43 2017 -0800 : second attempt level 2 - ft_strcmp
+01547b4e41b58a937b9db499815e740daddafdc7 - Exam 42, Tue Dec 12 09:38:38 2017 -0800 : attempted level 2 - reverse_bits
+5212608d0df672f8c4d2e87f6680fa1f0a9df50a - Exam 42, Tue Dec 12 09:26:14 2017 -0800 : attempted level 1 - search_and_replace
+ce5878e75f278d30ea617666c64536d6f0e735e1 - Exam 42, Tue Dec 12 09:13:21 2017 -0800 : attempted level 0 - hello
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1209 Dec 12 09:56 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 12 09:56 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 12 09:56 hello
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 12 09:56 hidenp
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 12 09:56 reverse_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 12 09:56 search_and_replace
+
+/var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user/ft_strcmp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  168 Dec 12 09:56 ft_strcmp.c
+
+/var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  126 Dec 12 09:56 hello.c
+
+/var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user/hidenp:
+total 0
+-rw-r--r--  1 deepthought  deepthought  0 Dec 12 09:56 hidenp.c
+
+/var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user/reverse_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  91 Dec 12 09:56 reverse_bits.c
+
+/var/folders/11/swt84z950_dcn7dk6231fmqm0000gp/T/tmp_oA40W/user/search_and_replace:
+total 8
+-rw-r--r--  1 deepthought  deepthought  491 Dec 12 09:56 search_and_replace.c
+ 
+= hidenp =======================================================================
+$> gcc -Wextra -Wall -Werror hidenp.c -o user_exe 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

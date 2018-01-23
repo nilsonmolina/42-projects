@@ -1,0 +1,66 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p20.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Tue Dec 19 10:57:29 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/c-exam-alone-in-the-dark-beginner/exam_20171219/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user log --pretty='%H - %an, %ad : %s'
+072778dc8dd4a5e40732b8202444b285c5b391e9 - Exam 42, Tue Dec 19 10:54:26 2017 -0800 : attempted level 3 - paramsum
+752c81c88433b4605d6015f7ad581824e59a50ef - Exam 42, Tue Dec 19 10:26:23 2017 -0800 : Got Lazy, skipping this one - add_prime_sum
+fa764b7cc8b49b05924b9330eab81fd3f20f9a33 - Exam 42, Tue Dec 19 10:05:16 2017 -0800 : attempted level 2 - inter
+929fe045898b56328eb2e8937569708e2a551e99 - Exam 42, Tue Dec 19 09:20:57 2017 -0800 : fixed silly mistake on ft_swap - caught before grading
+b0cadad8673b285a016a164781bd837f73dd6ff2 - Exam 42, Tue Dec 19 09:19:20 2017 -0800 : attempted level 1 - ft_swap
+6194df3657a7684c9c4d22302e44174ff4f5e916 - Exam 42, Tue Dec 19 09:09:39 2017 -0800 : attempted level 0 - ft_countdown
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1532 Dec 19 10:57 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 19 10:57 add_prime_sum
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 19 10:57 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 19 10:57 ft_swap
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 19 10:57 inter
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 19 10:57 paramsum
+
+/var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user/add_prime_sum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  672 Dec 19 10:57 add_prime_sum.c
+
+/var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  157 Dec 19 10:57 ft_countdown.c
+
+/var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  79 Dec 19 10:57 ft_swap.c
+
+/var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  525 Dec 19 10:57 inter.c
+
+/var/folders/f4/dmgqq77d065g14g1g691l4lr0000gp/T/tmp7UGpjE/user/paramsum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  476 Dec 19 10:57 paramsum.c
+ 
+= check_mate ===================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

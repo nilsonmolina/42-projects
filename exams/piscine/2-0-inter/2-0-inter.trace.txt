@@ -1,0 +1,62 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r5p12.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov  3 19:31:04 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam01/exam_20171104/nmolina
+
+= Git history ==================================================================
+$> git -C /var/folders/g6/0trw6_zx1k7109jfnrbc7x1w0000gp/T/tmpQ7UbCs/user log --pretty='%H - %an, %ad : %s'
+8734b5e2f77efd62c27cd5ccf1f4ec8ad9f0de7c - Exam 42, Fri Nov 3 19:28:56 2017 -0700 : gave up on level 2 - inter
+b3d525a805307a1cea7b2683005dcff40e41cc3b - Exam 42, Fri Nov 3 18:30:12 2017 -0700 : attempted level 1 - search_and_replace
+9d9a0c2af27d04d6d1416972b1d7b01707b0f637 - Exam 42, Fri Nov 3 18:14:14 2017 -0700 : attempted level 0 - ft_countdown
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/g6/0trw6_zx1k7109jfnrbc7x1w0000gp/T/tmpQ7UbCs/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  803 Nov  3 19:31 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  3 19:31 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  3 19:31 inter
+drwxr-xr-x  3 deepthought  deepthought  102 Nov  3 19:31 search_and_replace
+
+/var/folders/g6/0trw6_zx1k7109jfnrbc7x1w0000gp/T/tmpQ7UbCs/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1195 Nov  3 19:31 ft_countdown.c
+
+/var/folders/g6/0trw6_zx1k7109jfnrbc7x1w0000gp/T/tmpQ7UbCs/user/inter:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1229 Nov  3 19:31 inter.c
+
+/var/folders/g6/0trw6_zx1k7109jfnrbc7x1w0000gp/T/tmpQ7UbCs/user/search_and_replace:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1452 Nov  3 19:31 search_and_replace.c
+ 
+= inter ========================================================================
+$> gcc -Wextra -Wall -Werror inter.c -o user_exe 
+inter.c:17:15: error: unused parameter 'argc' [-Werror,-Wunused-parameter]
+int             main(int argc, char **argv)
+                         ^
+inter.c:17:28: error: unused parameter 'argv' [-Werror,-Wunused-parameter]
+int             main(int argc, char **argv)
+                                      ^
+2 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================
