@@ -1,0 +1,13 @@
+# to schedule cron tab run
+# echo "0 0 * * * bash ./scripts/04" | crontab
+
+if [ -f /etc/old.txt ]
+then
+  if [ "$(cat /etc/old.txt)" != "$(md5sum /etc/crontab | cut -d' ' -f1)" ]
+  then
+  	echo "crontab has been modified" | mail root
+    md5sum /etc/crontab | cut -d" " -f1 > /etc/old.txt
+  fi
+else
+	old="" > /etc/old.txt
+fi
