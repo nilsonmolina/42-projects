@@ -69,6 +69,6 @@ int		fillit_out(t_map *map)
 		write(1, &map->z[i], 1);
 		i++;
 	}
-	write(1, "\n\n", 2);
+	write(1, "\n", 2);
 	return (1);
 }
