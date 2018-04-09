@@ -1,0 +1,13 @@
+# ------------- Day 00 ----------------
+# tar -cf TARFILE FILE # c: create tar / f: file 
+# tar -xf FILE # x: extract / f: file / v: verbose / z: unzip .gz
+# klist > klist.txt
+# ldapsearch "uid=nmolina" | grep "dn:" > mobile-phone.ldif
+# ldapmodify -H ldap://ldap-master.42.us.org -f mobile-phone.ldif
+# patch a -i sw.diff -o b 
+# file -m ft_magic.mgc * 
+#
+# ------------- Day 01 ----------------
+# echo 42 | tr -d '\n' > \"\\\?\$\*\'KwaMe\'\*\$\?\\\"
+#
+#

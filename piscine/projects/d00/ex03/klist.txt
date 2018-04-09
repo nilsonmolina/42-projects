@@ -1,0 +1,6 @@
+Credentials cache: API:26839
+        Principal: nmolina@42.US.ORG
+
+  Issued                Expires               Principal
+Oct 23 13:37:10 2017  Oct 23 23:37:10 2017  krbtgt/42.US.ORG@42.US.ORG
+Oct 23 13:37:11 2017  Oct 23 23:37:10 2017  ldap/ldap-proxy.42.us.org@42.US.ORG
